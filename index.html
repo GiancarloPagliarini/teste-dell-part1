@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Consultar Trechos x Modalidade</title>
+</head>
+<body>
+    <main>  
+        <div class="container-card">
+            <h1>
+                Consultar Trechos x Modalidade
+            </h1>
+            <form>
+                <div class="form-input">
+                    <label for="originCity">Cidade origem:</label>
+                    <input placeholder="Ex. São Paulo" type="text" id="originCity" required>
+                    <label for="destinyCity">Cidade destino:</label>
+                    <input placeholder="Ex. Porto Alegre" type="text" id="destinyCity" required>
+                    <label for="typeTruck">Modalidade: </label>
+                    <input placeholder="Ex. Caminhão pequeno, médio ou grande" type="text" id="typeTruck">
+                </div>
+                <div class="container-buttons">
+                    <button id="btnConsult" type="button">Consultar</button>
+                    <button id="btnReset" type="reset">Limpar</button>
+                </div>
+            </form>
+            <div class="result-container">
+                <div class="div-result">
+                    <p id="res"></p>
+                </div>
+            </div>
+            <div class="result-container-negative">
+                <div class="div-result-negative">
+                    <p id="res-negative"></p>
+                </div>
+            </div>
+            <div class="container-truck-items">
+                <ul>
+                    <li class="truck-item-one">
+                        <img src="./src/images/caminhao-pequeno.png" alt="caminhão pequeno">
+                        <h5>Caminhão pequeno R$4.87 por km</h5>
+                    </li>
+                    <li class="truck-item-two">
+                        <img src="./src/images/caminhao-medio.png" alt="caminhão medio">
+                        <h5>Caminhão médio R$11.92 por km</h5>
+                    </li>
+                    <li class="truck-item-three">
+                        <img src="./src/images/caminhao-grande.png" alt="caminhão grande">
+                        <h5>Caminhão grande R$27.44 por km</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

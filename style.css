@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('./src/images/liquid-cheese.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.form-input label {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 6px;
+}
+
+.form-input input {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+
+.form-input input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.form-input input::placeholder {
+    color: #000;
+    opacity: 0.7;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#btnConsult, #btnReset {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#btnConsult:hover {
+    background-color: #2abfbf;
+    transform: scale(1.05);
+}
+
+#btnReset:hover {
+    background-color: #d75755;
+    transform: scale(1.05);
+}
+
+.result-container-negative {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.result-container {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.div-result {
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #2abfbf;
+    padding: 12px;
+}
+
+.div-result-negative {
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #d75755;
+    padding: 12px;
+}
+
+#res-negative {
+    color: #fff;
+}
+
+.container-truck-items ul{
+    display: flex;
+    gap: 6px;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+.container-truck-items ul li {
+    list-style: none;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.container-truck-items ul li:hover {
+    transform: scale(1.05);
+}
+
+.container-truck-items ul li img {
+    width: 60px;
+}
+
+
+@media screen and (max-width: 767px) {
+    main {
+        width: 80%;
+    }
+}
+
+
